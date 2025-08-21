@@ -36,12 +36,11 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 			return spe;
 		},
-		onBeforeMovePriority: 1,
-		onBeforeMove(pokemon) {
-			if (this.randomChance(1, 4)) {
-				this.add('cant', pokemon, 'par');
-				return false;
+		onAnyAccuracy(accuracy, target, move) {
+			if (move && target === this.effectState.target) {
+				return true;
 			}
+			return accuracy;
 		},
 	},
 	slp: {
