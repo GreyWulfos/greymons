@@ -1,6 +1,28 @@
 // List of flags and their descriptions can be found in sim/dex-moves.ts
 
 export const Moves: import('../sim/dex-moves').MoveDataTable = {
+	// NEW MOVES BEGIN HERE
+
+	frostbite: {
+		num: 920,
+		accuracy: 85,
+		basePower: 0,
+		category: "Status",
+		name: "Frostbite",
+		pp: 15,
+		priority: 0,
+		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
+		status: 'frz',
+		secondary: null,
+		target: "normal",
+		type: "Ice",
+		zMove: { boost: { atk: 1 } },
+		contestType: "Beautiful",
+	},
+
+
+	// NEW MOVES END HERE
+
 	"10000000voltthunderbolt": {
 		num: 719,
 		accuracy: true,
