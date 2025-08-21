@@ -1,4 +1,24 @@
 export const Items: import('../sim/dex-items').ItemDataTable = {
+	// new items
+
+	frostorb: {
+		name: "Frost Orb",
+		spritenum: 145,
+		fling: {
+			basePower: 30,
+			status: 'frz',
+		},
+		onResidualOrder: 28,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			pokemon.trySetStatus('frz', pokemon);
+		},
+		num: 273,
+		gen: 4,
+	},
+
+	// end of new items
+
 	abilityshield: {
 		name: "Ability Shield",
 		spritenum: 746,
