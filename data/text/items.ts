@@ -1,4 +1,13 @@
 export const ItemsText: { [id: IDEntry]: ItemText } = {
+	// new items
+
+	frostorb: {
+		name: "Frost Orb",
+		shortDesc: "At the end of every turn, this item attempts to freeze the holder.",
+	},
+	
+	// end of new items
+
 	abilityshield: {
 		name: "Ability Shield",
 		shortDesc: "Holder's Ability cannot be changed, suppressed, or ignored by any effect.",

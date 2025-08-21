@@ -1,4 +1,14 @@
 export const MovesText: { [id: IDEntry]: MoveText } = {
+	// new moves
+
+	frostbite: {
+		name: "Frostbite",
+		desc: "Freezes the target.",
+		shortDesc: "Freezes the target.",
+	},
+
+	// end of new moves
+
 	"10000000voltthunderbolt": {
 		name: "10,000,000 Volt Thunderbolt",
 		desc: "Has a very high chance for a critical hit.",
