@@ -6,6 +6,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		shortDesc: "At the end of every turn, this item attempts to freeze the holder.",
 	},
 	
+	fullmetaljacket: {
+		name: "Full Metal Jacket",
+		shortDesc: "Holder's Def is 1.5x, but it can only select damaging moves.",
+	},
+
 	// end of new items
 
 	abilityshield: {

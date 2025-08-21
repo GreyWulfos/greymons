@@ -13,8 +13,30 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onResidual(pokemon) {
 			pokemon.trySetStatus('frz', pokemon);
 		},
-		num: 273,
-		gen: 4,
+		num: 350,
+		gen: 9,
+	},
+	
+	fullmetaljacket: {
+		name: "Full Metal Jacket",
+		spritenum: 286,
+		fling: {
+			basePower: 80,
+		},
+		onModifyDefPriority: 1,
+		onModifyDef(def) {
+			return this.chainModify(1.5);
+		},
+		onDisableMove(pokemon) {
+			for (const moveSlot of pokemon.moveSlots) {
+				const move = this.dex.moves.get(moveSlot.id);
+				if (move.category === 'Status' && move.id !== 'mefirst') {
+					pokemon.disableMove(moveSlot.id);
+				}
+			}
+		},
+		num: 351,
+		gen: 9,
 	},
 
 	// end of new items
