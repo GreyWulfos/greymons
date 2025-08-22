@@ -1918,7 +1918,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	icebody: {
 		onWeather(target, source, effect) {
 			if (effect.id === 'hail' || effect.id === 'snowscape') {
-				this.heal(target.baseMaxhp / 16);
+				this.heal(target.baseMaxhp / 8);
 			}
 		},
 		onImmunity(type, pokemon) {
@@ -3699,7 +3699,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onWeather(target, source, effect) {
 			if (target.hasItem('utilityumbrella')) return;
 			if (effect.id === 'raindance' || effect.id === 'primordialsea') {
-				this.heal(target.baseMaxhp / 16);
+				this.heal(target.baseMaxhp / 8);
 			}
 		},
 		flags: {},
