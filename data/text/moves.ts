@@ -106,8 +106,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	airslash: {
 		name: "Air Slash",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "Has a 30% chance to lower the target's Special Defence by 1 stage.",
+		shortDesc: "30% chance to inflict Sp. Def -1.",
 	},
 	alloutpummeling: {
 		name: "All-Out Pummeling",
@@ -252,8 +252,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	astonish: {
 		name: "Astonish",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "Has a 30% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "30% chance to inflict Spe -1.",
 		gen3: {
 			desc: "Has a 30% chance to make the target flinch. Damage doubles if the target has used Minimize while active.",
 		},
@@ -523,8 +523,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	bite: {
 		name: "Bite",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "Has a 30% chance to lower targets' Defense by 2 stages.",
+		shortDesc: "30% chance to inflict Def -2.",
 		gen1: {
 			desc: "Has a 10% chance to make the target flinch.",
 			shortDesc: "10% chance to make the target flinch.",
@@ -1270,8 +1270,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	darkpulse: {
 		name: "Dark Pulse",
-		desc: "Has a 20% chance to make the target flinch.",
-		shortDesc: "20% chance to make the target flinch.",
+		desc: "Has a 30% chance to lower the target's Special Defense by 1 stage.",
+		shortDesc: "30% chance to inflict Sp. Def -1.",
 	},
 	darkvoid: {
 		name: "Dark Void",
@@ -1509,8 +1509,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	doubleironbash: {
 		name: "Double Iron Bash",
-		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. Has a 30% chance to make the target flinch.",
-		shortDesc: "Hits twice. 30% chance to make the target flinch.",
+		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
+		shortDesc: "Hits twice.",
 	},
 	doublekick: {
 		name: "Double Kick",
@@ -1609,8 +1609,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	dragonrush: {
 		name: "Dragon Rush",
-		desc: "Has a 20% chance to make the target flinch. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
-		shortDesc: "20% chance to make the target flinch.",
+		desc: "Has a 20% chance to confuse the target. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
+		shortDesc: "20% chance to inflict confusion.",
 		gen5: {
 			desc: "Has a 20% chance to make the target flinch.",
 		},
@@ -1902,8 +1902,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	extrasensory: {
 		name: "Extrasensory",
-		desc: "Has a 10% chance to make the target flinch.",
-		shortDesc: "10% chance to make the target flinch.",
+		desc: "Has a 20% chance to inflict paralysis against the target.",
+		shortDesc: "20% chance to paralyze target.",
 		gen3: {
 			desc: "Has a 10% chance to make the target flinch. Damage doubles if the target has used Minimize while active.",
 		},
@@ -2010,8 +2010,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	fierywrath: {
 		name: "Fiery Wrath",
-		desc: "Has a 20% chance to make the target flinch.",
-		shortDesc: "20% chance to make the foe(s) flinch.",
+		desc: "Has a 30% chance to burn the target.",
+		shortDesc: "30% chance to burn foe(s).",
 	},
 	filletaway: {
 		name: "Fillet Away",
@@ -2034,8 +2034,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	firefang: {
 		name: "Fire Fang",
-		desc: "Has a 10% chance to burn the target and a 10% chance to make it flinch.",
-		shortDesc: "10% chance to burn. 10% chance to flinch.",
+		desc: "Has a 10% chance to burn the target and a 10% chance to lower target's Defence by 1 stage.",
+		shortDesc: "10% chance to burn. 10% chance to inflict Def -1.",
 		gen4: {
 			desc: "Has a 10% chance to burn the target and a 10% chance to make it flinch. This move can hit Pokemon with the Wonder Guard Ability regardless of their typing.",
 		},
@@ -2894,8 +2894,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	headbutt: {
 		name: "Headbutt",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "Has a 30% chance to confuse the target.",
+		shortDesc: "30% chance to inflict confusion.",
 	},
 	headcharge: {
 		name: "Head Charge",
@@ -3199,8 +3199,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	hyperfang: {
 		name: "Hyper Fang",
-		desc: "Has a 10% chance to make the target flinch.",
-		shortDesc: "10% chance to make the target flinch.",
+		desc: "High crit. Has a 10% chance to lower target's Defense by 1 stage.",
+		shortDesc: "High crit. 10% chance for Def -1.",
 	},
 	hyperspacefury: {
 		name: "Hyperspace Fury",
@@ -3257,8 +3257,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	icefang: {
 		name: "Ice Fang",
-		desc: "Has a 10% chance to freeze the target and a 10% chance to make it flinch.",
-		shortDesc: "10% chance to freeze. 10% chance to flinch.",
+		desc: "Has a 10% chance to freeze the target and a 10% chance to lower its Defense by 1 stage.",
+		shortDesc: "10% chance to freeze. 10% chance to inflict Def -1.",
 	},
 	icehammer: {
 		name: "Ice Hammer",
@@ -3282,8 +3282,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	iciclecrash: {
 		name: "Icicle Crash",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "Has a 20% chance to freeze the target.",
+		shortDesc: "20% chance to freeze target.",
 	},
 	iciclespear: {
 		name: "Icicle Spear",
@@ -3411,8 +3411,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	ironhead: {
 		name: "Iron Head",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "Has a 30% chance to lower the target's Attack by 1 stage.",
+		shortDesc: "30% chance to inflict Atk -1.",
 	},
 	irontail: {
 		name: "Iron Tail",
@@ -4347,8 +4347,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	mountaingale: {
 		name: "Mountain Gale",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "Has a 30% chance to lower the target's Attack by 1 stage.",
+		shortDesc: "30% chance to inflict Atk -1.",
 	},
 	mudbomb: {
 		name: "Mud Bomb",
@@ -4931,8 +4931,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	psychic: {
 		name: "Psychic",
-		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
-		shortDesc: "10% chance to lower the target's Sp. Def by 1.",
+		desc: "Has a 20% chance to lower the target's Special Defense by 1 stage.",
+		shortDesc: "20% chance to lower the target's Sp. Def by 1.",
 		gen1: {
 			desc: "Has a 33% chance to lower the target's Special by 1 stage.",
 			shortDesc: "33% chance to lower the target's Special by 1.",
@@ -5366,8 +5366,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	rockslide: {
 		name: "Rock Slide",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the foe(s) flinch.",
+		desc: "Has a 30% chance to lower target's Defense by 1 stage.",
+		shortDesc: "30% chance to give foe(s) Def -1.",
 		gen1: {
 			desc: "No additional effect.",
 			shortDesc: "No additional effect.",
@@ -6036,8 +6036,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	snore: {
 		name: "Snore",
-		desc: "Has a 30% chance to make the target flinch. Fails if the user is not asleep.",
-		shortDesc: "User must be asleep. 30% chance to flinch target.",
+		desc: "Has a 10% chance to make the target fall asleep. Fails if the user is not asleep.",
+		shortDesc: "User must be asleep. 10% chance to inflict sleep.",
 	},
 	snowscape: {
 		name: "Snowscape",
@@ -6983,8 +6983,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	thunderfang: {
 		name: "Thunder Fang",
-		desc: "Has a 10% chance to paralyze the target and a 10% chance to make it flinch.",
-		shortDesc: "10% chance to paralyze. 10% chance to flinch.",
+		desc: "Has a 10% chance to paralyze the target and a 10% chance to lower its Defense by 1 stage.",
+		shortDesc: "10% chance to paralyze. 10% chance to inflict Def -1.",
 	},
 	thunderouskick: {
 		name: "Thunderous Kick",
@@ -7135,8 +7135,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	triplearrows: {
 		name: "Triple Arrows",
-		desc: "Has a 50% chance to lower the target's Defense by 1 stage, a 30% chance to make it flinch, and a higher chance for a critical hit.",
-		shortDesc: "High crit. Target: 50% -1 Defense, 30% flinch.",
+		desc: "Has a 66% chance to lower the target's Defense by either 1, 2 or 3 stages with equal chances.",
+		shortDesc: "High crit. 66% chance to inflicts -1, -2, or -3 Def.",
 	},
 	tripleaxel: {
 		name: "Triple Axel",
@@ -7202,8 +7202,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	twister: {
 		name: "Twister",
-		desc: "Has a 20% chance to make the target flinch. Power doubles if the target is using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.",
-		shortDesc: "20% chance to make the foe(s) flinch.",
+		desc: "Has a 20% chance to lower target's Speed by 1 stage. Power doubles if the target is using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.",
+		shortDesc: "20% chance to inflict Spe -1.",
 		gen4: {
 			desc: "Has a 20% chance to make the target flinch. Power doubles if the target is using Bounce or Fly.",
 		},
@@ -7328,8 +7328,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	waterfall: {
 		name: "Waterfall",
-		desc: "Has a 20% chance to make the target flinch.",
-		shortDesc: "20% chance to make the target flinch.",
+		desc: "Has a 20% chance to lower target's Speed by 1 stage.",
+		shortDesc: "20% chance to inflict Spe -1.",
 		gen3: {
 			desc: "No additional effect.",
 			shortDesc: "No additional effect.",
@@ -7601,13 +7601,13 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	zenheadbutt: {
 		name: "Zen Headbutt",
-		desc: "Has a 20% chance to make the target flinch.",
-		shortDesc: "20% chance to make the target flinch.",
+		desc: "Has a 20% chance to confuse the target.",
+		shortDesc: "20% chance to inflict confusion.",
 	},
 	zingzap: {
 		name: "Zing Zap",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "Has a 30% chance to paralyze the target.",
+		shortDesc: "30% paralysis chance.",
 	},
 	zippyzap: {
 		name: "Zippy Zap",

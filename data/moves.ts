@@ -283,8 +283,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	airslash: {
 		num: 403,
-		accuracy: 95,
-		basePower: 75,
+		accuracy: 100,
+		basePower: 80,
 		category: "Special",
 		name: "Air Slash",
 		pp: 15,
@@ -292,7 +292,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, mirror: 1, distance: 1, metronome: 1, slicing: 1 },
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				spd: -1,
+			},
 		},
 		target: "any",
 		type: "Flying",
@@ -716,8 +718,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
-			chance: 30,
-			volatileStatus: 'flinch',
+			chance: 20,
+			boosts: {
+				spe: -1,
+			},
 		},
 		target: "normal",
 		type: "Ghost",
@@ -1428,7 +1432,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1 },
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				def: -2,
+			},
 		},
 		target: "normal",
 		type: "Dark",
@@ -3491,8 +3497,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, distance: 1, metronome: 1, pulse: 1 },
 		secondary: {
-			chance: 20,
-			volatileStatus: 'flinch',
+			chance: 30,
+			boosts: {
+				spd: -1,
+			},
 		},
 		target: "any",
 		type: "Dark",
@@ -4086,10 +4094,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, punch: 1 },
 		multihit: 2,
-		secondary: {
-			chance: 30,
-			volatileStatus: 'flinch',
-		},
 		target: "normal",
 		type: "Steel",
 		zMove: { basePower: 180 },
@@ -4372,7 +4376,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	dragonrush: {
 		num: 407,
-		accuracy: 75,
+		accuracy: 85,
 		basePower: 100,
 		category: "Physical",
 		name: "Dragon Rush",
@@ -4381,7 +4385,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
 			chance: 20,
-			volatileStatus: 'flinch',
+			volatileStatus: 'confusion',
 		},
 		target: "normal",
 		type: "Dragon",
@@ -5194,8 +5198,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
-			chance: 10,
-			volatileStatus: 'flinch',
+			chance: 20,
+			status: 'par',
 		},
 		target: "normal",
 		type: "Psychic",
@@ -5485,8 +5489,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
 		secondary: {
-			chance: 20,
-			volatileStatus: 'flinch',
+			chance: 30,
+			status: 'brn',
 		},
 		target: "allAdjacentFoes",
 		type: "Dark",
@@ -5559,8 +5563,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	firefang: {
 		num: 424,
-		accuracy: 95,
-		basePower: 65,
+		accuracy: 100,
+		basePower: 75,
 		category: "Physical",
 		name: "Fire Fang",
 		pp: 15,
@@ -5572,7 +5576,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				status: 'brn',
 			}, {
 				chance: 10,
-				volatileStatus: 'flinch',
+				boosts: {
+					def: -1,
+				},
 			},
 		],
 		target: "normal",
@@ -8503,7 +8509,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			volatileStatus: 'confusion',
 		},
 		target: "normal",
 		type: "Normal",
@@ -9510,11 +9516,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Past",
 		name: "Hyper Fang",
 		pp: 15,
+		critRatio: 2,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1 },
 		secondary: {
 			chance: 10,
-			volatileStatus: 'flinch',
+			boosts: {
+				def: -1,
+			},
 		},
 		target: "normal",
 		type: "Normal",
@@ -9714,8 +9723,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	icefang: {
 		num: 423,
-		accuracy: 95,
-		basePower: 65,
+		accuracy: 100,
+		basePower: 75,
 		category: "Physical",
 		name: "Ice Fang",
 		pp: 15,
@@ -9727,7 +9736,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				status: 'frz',
 			}, {
 				chance: 10,
-				volatileStatus: 'flinch',
+				boosts: {
+					def: -1,
+				},
 			},
 		],
 		target: "normal",
@@ -9809,7 +9820,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	iciclecrash: {
 		num: 556,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 85,
 		category: "Physical",
 		name: "Icicle Crash",
@@ -9817,8 +9828,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
-			chance: 30,
-			volatileStatus: 'flinch',
+			chance: 20,
+			status: 'frz',
 		},
 		target: "normal",
 		type: "Ice",
@@ -10112,7 +10123,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				atk: -1,
+			},
 		},
 		target: "normal",
 		type: "Steel",
@@ -12848,7 +12861,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				atk: -1,
+			},
 		},
 		target: "normal",
 		type: "Ice",
@@ -14607,7 +14622,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
-			chance: 10,
+			chance: 20,
 			boosts: {
 				spd: -1,
 			},
@@ -15818,8 +15833,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	rockslide: {
 		num: 157,
-		accuracy: 90,
-		basePower: 75,
+		accuracy: 100,
+		basePower: 80,
 		category: "Physical",
 		name: "Rock Slide",
 		pp: 10,
@@ -15827,7 +15842,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				def: -1,
+			},
 		},
 		target: "allAdjacentFoes",
 		type: "Rock",
@@ -15836,14 +15853,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	rocksmash: {
 		num: 249,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 80,
 		category: "Physical",
 		name: "Rock Smash",
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
-			chance: 50,
+			chance: 30,
 			boosts: {
 				def: -1,
 			},
@@ -17830,8 +17847,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			return source.status === 'slp' || source.hasAbility('comatose');
 		},
 		secondary: {
-			chance: 30,
-			volatileStatus: 'flinch',
+			chance: 10,
+			status: 'slp',
 		},
 		target: "normal",
 		type: "Normal",
@@ -18742,10 +18759,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 20,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, nonsky: 1, metronome: 1 },
-		secondary: {
-			chance: 30,
-			volatileStatus: 'flinch',
-		},
 		target: "normal",
 		type: "Normal",
 		contestType: "Tough",
@@ -19181,7 +19194,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	superfang: {
 		num: 162,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 0,
 		damageCallback(pokemon, target) {
 			return this.clampIntRange(target.getUndynamaxedHP() / 2, 1);
@@ -20279,8 +20292,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	thunderfang: {
 		num: 422,
-		accuracy: 95,
-		basePower: 65,
+		accuracy: 100,
+		basePower: 75,
 		category: "Physical",
 		name: "Thunder Fang",
 		pp: 15,
@@ -20292,7 +20305,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				status: 'par',
 			}, {
 				chance: 10,
-				volatileStatus: 'flinch',
+				boosts: {
+					def: -1,
+				},
 			},
 		],
 		target: "normal",
@@ -20770,18 +20785,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
-		critRatio: 2,
-		secondaries: [
-			{
-				chance: 50,
-				boosts: {
-					def: -1,
-				},
-			}, {
-				chance: 30,
-				volatileStatus: 'flinch',
+		secondary: {
+			chance: 50,
+			onHit(target, source) {
+				const result = this.random(3);
+				if (result === 0) {
+					target.boostBy({ def: -1, });
+				} else if (result === 1) {
+					target.boostBy({ def: -2, });
+				} else {
+					target.boostBy({ def: -3, });
+				}
 			},
-		],
+		},
 		target: "normal",
 		type: "Fighting",
 	},
@@ -20968,7 +20984,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, mirror: 1, metronome: 1, wind: 1 },
 		secondary: {
 			chance: 20,
-			volatileStatus: 'flinch',
+			boosts: {
+				spe: -1,
+			},
 		},
 		target: "allAdjacentFoes",
 		type: "Dragon",
@@ -21299,7 +21317,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
 			chance: 20,
-			volatileStatus: 'flinch',
+			boosts: {
+				spe: -1,
+			},
 		},
 		target: "normal",
 		type: "Water",
@@ -22019,7 +22039,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
 			chance: 20,
-			volatileStatus: 'flinch',
+			volatileStatus: 'confusion',
 		},
 		target: "normal",
 		type: "Psychic",
@@ -22036,7 +22056,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			status: 'par',
 		},
 		target: "normal",
 		type: "Electric",
