@@ -646,7 +646,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			rockslide: ["9M", "8M", "8V", "7M", "6M", "5M", "4M", "3T"],
 			rocksmash: ["7V", "6M", "5M", "4M", "3M"],
 			rocktomb: ["9M", "8M", "7M", "6M", "5M", "4M"],
-			roost: ["8V", "7M", "6M", "5T", "4M"],
+			roost: ["9M", "8V", "7M", "6M", "5T", "4M"],
 			round: ["8M", "7M", "6M", "5M"],
 			sandstorm: ["9M", "7V"],
 			scaleshot: ["8T"],
