@@ -377,7 +377,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	pidgeot: {
 		num: 18,
 		name: "Pidgeot",
-		types: ["Normal", "Flying"],
+		types: ["Flying"],
 		baseStats: { hp: 83, atk: 60, def: 75, spa: 106, spd: 70, spe: 111 },
 		abilities: { 0: "No Guard", H: "Gale Wings" },
 		heightm: 1.5,
