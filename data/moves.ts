@@ -5252,7 +5252,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		onBasePower(basePower, pokemon) {
-			if (pokemon.status && pokemon.status !== 'slp') {
+			if (pokemon.status) {
 				return this.chainModify(2);
 			}
 		},
