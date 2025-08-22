@@ -22035,6 +22035,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			yawn: ["9L12", "9S2", "8L12", "8V", "7L20", "6L20", "5L20", "4L20", "3L21"],
 			zapcannon: ["7V"],
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T", "4T"],
+
+			// new moves
+			slackoff: ["9M"],
 		},
 		eventData: [
 			{generation: 3, level: 43, moves: ["refresh", "fissure", "curse", "bodyslam"]},
