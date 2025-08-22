@@ -7135,8 +7135,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	triplearrows: {
 		name: "Triple Arrows",
-		desc: "Has a 66% chance to lower the target's Defense by either 1, 2 or 3 stages with equal chances.",
-		shortDesc: "High crit. 66% chance to inflicts -1, -2, or -3 Def.",
+		desc: "Has a 50% chance to lower the target's Defense by either 1, 2 or 3 stages with equal chances.",
+		shortDesc: "50% chance to inflict -1, -2, or -3 Def.",
 	},
 	tripleaxel: {
 		name: "Triple Axel",

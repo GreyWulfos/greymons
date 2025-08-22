@@ -20790,11 +20790,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onHit(target, source) {
 				const result = this.random(3);
 				if (result === 0) {
-					target.boostBy({ def: -1, });
+					this.boost({ def: -1, }, target, source);
 				} else if (result === 1) {
-					target.boostBy({ def: -2, });
+					this.boost({ def: -2, }, target, source);
 				} else {
-					target.boostBy({ def: -3, });
+					this.boost({ def: -3, }, target, source);
 				}
 			},
 		},
