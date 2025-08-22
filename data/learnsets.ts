@@ -32998,6 +32998,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["8M", "7T", "6T", "5T", "4T"],
 			waterpulse: ["7T", "6T", "4M", "3M"],
 			whirlpool: ["8M", "4M"],
+
+			// new moves
+			pursuit: ["9M"],
 		},
 		eventData: [
 			{generation: 3, level: 70, moves: ["thrash", "scaryface", "crunch", "earthquake"], pokeball: "pokeball"},
