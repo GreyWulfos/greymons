@@ -1,4 +1,17 @@
 export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
+
+	// new abilities start here
+
+	easypickings: {
+		name: "Easy Pickings",
+		desc: "At the end of every turn, this pokemon restores 1/16 of its max HP.",
+		shortDesc: "After each turn, holder restores 1/16 of its max HP.",
+
+		heal: "  [POKEMON] restored some health with its easy pickings!",
+	},
+
+	// new abilities end here
+
 	noability: {
 		name: "No Ability",
 		shortDesc: "Does nothing.",

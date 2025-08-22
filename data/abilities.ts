@@ -33,6 +33,22 @@ Ratings and how they work:
 */
 
 export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
+
+	// new abilities start here
+
+	easypickings: {
+		onResidualOrder: 5,
+		onResidualSubOrder: 4,
+		onResidual(pokemon) {
+			this.heal(pokemon.baseMaxhp / 16);
+		},
+		name: "Easy Pickings",
+		rating: 4,
+		num: 311,
+	},
+
+	// new abilities end here
+
 	noability: {
 		isNonstandard: "Past",
 		flags: {},
