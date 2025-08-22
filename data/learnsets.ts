@@ -10426,6 +10426,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			whirlpool: ["9M", "8M", "7V", "4M"],
 			wrap: ["9L1", "8L1", "8V", "7L19", "7V", "6L19", "5L22", "4L22", "3L30"],
 			wringout: ["7L1", "6L1", "5L61", "4L55"],
+
+			// new moves
+			powerwhip: ["9M"],
+			aquaring: ["9M"],
 		},
 		encounters: [
 			{generation: 1, level: 20},
