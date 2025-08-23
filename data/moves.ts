@@ -5252,7 +5252,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		onBasePower(basePower, pokemon) {
-			if (pokemon.status) {
+			if (pokemon.status || pokemon.hasAbility('comatose')) {
 				return this.chainModify(2);
 			}
 		},
@@ -15544,7 +15544,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Rest",
 		pp: 5,
 		priority: 0,
-		flags: { snatch: 1, heal: 1, metronome: 1 },
+		flags: { snatch: 1, heal: 1, metronome: 1, nosleeptalk: 1 },
 		onTry(source) {
 			if (source.status === 'slp' || source.hasAbility('comatose')) return false;
 
