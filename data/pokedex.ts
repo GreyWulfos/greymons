@@ -268,7 +268,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	butterfree: {
 		num: 12,
 		name: "Butterfree",
-		types: ["Bug", "Psychic"],
+		types: ["Bug", "Flying"],
 		baseStats: { hp: 75, atk: 40, def: 50, spa: 105, spd: 90, spe: 105 },
 		abilities: { 0: "Compound Eyes", H: "Tinted Lens" },
 		heightm: 1.1,
