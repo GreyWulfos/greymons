@@ -4070,6 +4070,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			workup: ["8M"],
 			xscissor: ["9M", "8M", "8V", "7M", "6M", "5M", "4M"],
+
+			// new moves
+			bodypress: ["9M"],
+			shoreup: ["9M"],
 		},
 		encounters: [
 			{generation: 2, level: 10},
@@ -4479,6 +4483,12 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			watergun: ["7V"],
 			waterpulse: ["7T", "6T", "4M", "3M"],
 			whirlpool: ["8M", "4M"],
+
+			// learnsets
+			moonblast: ["9M"],
+			moonlight: ["9M"],
+			dazzlinggleam: ["9M"],
+			playrough: ["9M"],
 		},
 		eventData: [
 			{generation: 6, level: 41, perfectIVs: 2, abilities: ["poisonpoint"], moves: ["tailwhip", "doublekick", "poisonsting", "bodyslam"], pokeball: "cherishball"},
@@ -5512,7 +5522,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			tailwhip: ["9L1", "8L1", "8V", "7V"],
 			takedown: ["9M", "7V"],
 			terablast: ["9M"],
-			toxic: ["8V", "7M", "7V", "6M", "5M", "4M", "3M"],
+			toxic: ["9V", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			weatherball: ["9M", "8M"],
 			willowisp: ["9M", "9L1", "8M", "8L1", "8V", "7M", "6M", "5M", "5S0", "4M"],
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T", "4T"],
@@ -5612,6 +5622,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			weatherball: ["9M", "8M"],
 			wonderroom: ["8M", "7T"],
 			zenheadbutt: ["9M", "8M", "7T"],
+
+			// new moves
+			aurasphere: ["9M"],
+			frostbite: ["9M"],
 		},
 	},
 	igglybuff: {
