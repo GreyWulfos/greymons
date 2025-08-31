@@ -2067,6 +2067,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uturn: ["8V", "7M", "6M", "5M", "4M"],
 			whirlwind: ["7V"],
 			workup: ["7M", "5M"],
+
+			// new moves
+			nightslash: ["9M"],
+			spikes: ["9M"],
 		},
 		encounters: [
 			{generation: 1, level: 19},

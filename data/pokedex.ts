@@ -490,9 +490,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	fearow: {
 		num: 22,
 		name: "Fearow",
-		types: ["Normal", "Flying"],
-		baseStats: { hp: 65, atk: 90, def: 65, spa: 61, spd: 61, spe: 100 },
-		abilities: { 0: "Keen Eye", H: "Sniper" },
+		types: ["Dark", "Flying"],
+		baseStats: { hp: 83, atk: 110, def: 105, spa: 61, spd: 61, spe: 70 },
+		abilities: { 0: "Intimidate", H: "Sniper" },
 		heightm: 1.2,
 		weightkg: 38,
 		color: "Brown",
