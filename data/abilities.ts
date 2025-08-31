@@ -46,6 +46,27 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: 311,
 	},
+	
+	daunt: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Intimidate', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({ spa: -1 }, target, pokemon, null, true);
+				}
+			}
+		},
+		flags: {},
+		name: "Daunt",
+		rating: 3.5,
+		num: 22,
+	},
 
 	// new abilities end here
 
