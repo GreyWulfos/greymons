@@ -2076,7 +2076,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 556,
 		gen: 5,
-		isNonstandard: "Past",
 	},
 	flyingmemory: {
 		name: "Flying Memory",
