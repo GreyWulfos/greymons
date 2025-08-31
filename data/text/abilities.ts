@@ -1555,8 +1555,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	sandveil: {
 		name: "Sand Veil",
-		desc: "If Sandstorm is active, the accuracy of moves used against this Pokemon is multiplied by 0.8. This Pokemon takes no damage from Sandstorm.",
-		shortDesc: "If Sandstorm is active, this Pokemon's evasiveness is 1.25x; immunity to Sandstorm.",
+		desc: "If Sandstorm is active, this Pokemon's Defense is increased by 1.5x. This Pokemon takes no damage from Sandstorm.",
+		shortDesc: "If Sandstorm is active, this Pokemon's Defense is 1.5x; immunity to Sandstorm.",
 	},
 	sapsipper: {
 		name: "Sap Sipper",
@@ -1726,8 +1726,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	snowcloak: {
 		name: "Snow Cloak",
-		desc: "If Snow is active, the accuracy of moves used against this Pokemon is multiplied by 0.8.",
-		shortDesc: "If Snow is active, this Pokemon's evasiveness is 1.25x.",
+		desc: "If Snow is active, this Pokemon's Special Defense is increased by 1.5x.",
+		shortDesc: "If Snow is active, this Pokemon's Defense is 1.5x.",
 		gen8: {
 			desc: "If Hail is active, the accuracy of moves used against this Pokemon is multiplied by 0.8. This Pokemon takes no damage from Hail.",
 			shortDesc: "If Hail is active, this Pokemon's evasiveness is 1.25x; immunity to Hail.",
