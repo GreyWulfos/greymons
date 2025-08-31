@@ -16,6 +16,22 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 350,
 		gen: 9,
 	},
+
+	joltorb: {
+		name: "Jolt Orb",
+		spritenum: 251,
+		fling: {
+			basePower: 30,
+			status: 'par',
+		},
+		onResidualOrder: 28,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			pokemon.trySetStatus('par', pokemon);
+		},
+		num: 351,
+		gen: 9,
+	},
 	
 	fullmetaljacket: {
 		name: "Full Metal Jacket",
@@ -35,7 +51,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 				}
 			}
 		},
-		num: 351,
+		num: 352,
 		gen: 9,
 	},
 
