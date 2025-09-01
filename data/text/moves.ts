@@ -84,8 +84,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	aeroblast: {
 		name: "Aeroblast",
-		desc: "Has a higher chance for a critical hit.",
-		shortDesc: "High critical hit ratio.",
+		desc: "Has a 100% chance to lower the target's Special Defense by 1 stage.",
+		shortDesc: "100% chance to lower the target's Sp. Def by 1.",
 	},
 	afteryou: {
 		name: "After You",
@@ -5338,8 +5338,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	roaroftime: {
 		name: "Roar of Time",
-		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
-		shortDesc: "User cannot move next turn.",
+		shortDesc: "Cannot be selected the turn after it's used.",
 	},
 	rockblast: {
 		name: "Rock Blast",
@@ -6126,8 +6125,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	spacialrend: {
 		name: "Spacial Rend",
-		desc: "Has a higher chance for a critical hit.",
-		shortDesc: "High critical hit ratio.",
+		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
+		shortDesc: "Always results in a critical hit.",
 	},
 	spark: {
 		name: "Spark",
