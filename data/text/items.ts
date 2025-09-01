@@ -5,6 +5,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Frost Orb",
 		shortDesc: "At the end of every turn, this item attempts to freeze the holder.",
 	},
+
+	joltorb: {
+		name: "Jolt Orb",
+		shortDesc: "At the end of every turn, this item attempts to paralyze the holder."
+	},
 	
 	fullmetaljacket: {
 		name: "Full Metal Jacket",
