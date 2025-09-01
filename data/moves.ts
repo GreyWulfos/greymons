@@ -4469,7 +4469,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	drillrun: {
 		num: 529,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
 		name: "Drill Run",
@@ -9238,15 +9238,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	highhorsepower: {
 		num: 667,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 95,
 		category: "Physical",
 		name: "High Horsepower",
 		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		secondary: null,
-		target: "normal",
+		secondary: {
+			chance: 20,
+			boosts: {
+				spe: -1,
+			},
+		},		target: "normal",
 		type: "Ground",
 		contestType: "Tough",
 	},
@@ -12226,8 +12230,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	meteormash: {
 		num: 309,
-		accuracy: 90,
-		basePower: 90,
+		accuracy: 100,
+		basePower: 100,
 		category: "Physical",
 		name: "Meteor Mash",
 		pp: 10,
@@ -13584,12 +13588,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 120,
 		category: "Physical",
 		name: "Outrage",
-		pp: 10,
+		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, failinstruct: 1 },
-		self: {
-			volatileStatus: 'lockedmove',
-		},
+		recoil: [33, 100],
 		secondary: null,
 		target: "randomNormal",
 		type: "Dragon",
@@ -13936,7 +13938,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	playrough: {
 		num: 583,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
 		name: "Play Rough",
@@ -14232,7 +14234,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	powergem: {
 		num: 408,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Special",
 		name: "Power Gem",
 		pp: 20,
@@ -18539,7 +18541,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onSwitchIn(pokemon) {
 				if (pokemon.hasItem('heavydutyboots')) return;
 				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
-				this.damage(pokemon.maxhp * (2 ** typeMod) / 8);
+				this.damage(pokemon.maxhp * Math.min(2 ** typeMod, 4) / 8);
 			},
 		},
 		secondary: null,
@@ -21716,8 +21718,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		recoil: [1, 4],
-		secondary: null,
+		secondary: {
+			chance: 10,
+			status: 'par',
+		},
 		target: "normal",
 		type: "Electric",
 		contestType: "Tough",
@@ -22029,8 +22033,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	zenheadbutt: {
 		num: 428,
-		accuracy: 90,
-		basePower: 80,
+		accuracy: 100,
+		basePower: 90,
 		category: "Physical",
 		name: "Zen Headbutt",
 		pp: 15,
