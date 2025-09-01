@@ -12254,6 +12254,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			voltswitch: ["9M", "8M", "7M", "6M", "5M"],
 			wildcharge: ["9M", "8M", "7M", "6M", "5M"],
 			zapcannon: ["9L64", "8L64", "7L1", "6L1", "5L66", "4L60"],
+
+			// new moves
+			overheat: ["9M"],
 		},
 	},
 	farfetchd: {
