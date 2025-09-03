@@ -349,7 +349,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	dauntlessshield: {
 		name: "Dauntless Shield",
-		shortDesc: "On switch-in, this Pokemon's Defense is raised by 1 stage. Once per battle.",
+		desc: "On switch-in, this Pokemon's Defense is raised by 1 stage. This can only occur once per battle, unless the Pokemon holds the item Rusted Shield.",
+		shortDesc: "On switch-in, +1 Def. Once per battle, unless Rusted Shield is held.",
 		gen8: {
 			shortDesc: "On switch-in, this Pokemon's Defense is raised by 1 stage.",
 		},
@@ -817,7 +818,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	intrepidsword: {
 		name: "Intrepid Sword",
-		shortDesc: "On switch-in, this Pokemon's Attack is raised by 1 stage. Once per battle.",
+		desc: "On switch-in, this Pokemon's Attack is raised by 1 stage. This can only occur once per battle, unless the Pokemon holds the item Rusted Sword.",
+		shortDesc: "On switch-in, +1 Atk. Once per battle, unless Rusted Sword is held.",
 		gen8: {
 			shortDesc: "On switch-in, this Pokemon's Attack is raised by 1 stage.",
 		},

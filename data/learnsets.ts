@@ -33164,6 +33164,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wonderroom: ["8M", "7T", "6T", "5T"],
 			zapcannon: ["7V"],
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T", "4T"],
+
+			// new moves
+			aquaring: ["9M"],
+			scald: ["9M"],
 		},
 		eventData: [
 			{generation: 3, level: 70, shiny: 1, moves: ["recover", "hydropump", "raindance", "swift"]},
@@ -85808,7 +85812,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			bodyslam: ["9M"],
 			brickbreak: ["9M", "8M"],
 			brutalswing: ["8M"],
-			closecombat: ["9M", "9L77", "8M", "8L77"],
 			crunch: ["9M", "9L55", "8M", "8L55", "8S0"],
 			dazzlinggleam: ["9M"],
 			dig: ["9M", "8M"],
@@ -85947,6 +85950,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wideguard: ["9L1", "8L1", "8S1"],
 			wildcharge: ["9M", "8M"],
 			workup: ["8M"],
+
+			// new moves
+			kingsshield: ["9M"],
+			morningsun: ["9M"],
 		},
 		eventData: [
 			{generation: 8, level: 70, perfectIVs: 3, moves: ["slash", "crunch", "ironhead", "irondefense"]},

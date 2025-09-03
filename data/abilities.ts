@@ -893,7 +893,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	dauntlessshield: {
 		onStart(pokemon) {
-			if (pokemon.shieldBoost) return;
+			if (pokemon.shieldBoost && !pokemon.hasItem('rustedshield')) return;
 			pokemon.shieldBoost = true;
 			this.boost({ def: 1 }, pokemon);
 		},
@@ -2195,7 +2195,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	intrepidsword: {
 		onStart(pokemon) {
-			if (pokemon.swordBoost) return;
+			if (pokemon.swordBoost && !pokemon.hasItem('rustedsword')) return;
 			pokemon.swordBoost = true;
 			this.boost({ atk: 1 }, pokemon);
 		},

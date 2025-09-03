@@ -1572,11 +1572,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	rustedshield: {
 		name: "Rusted Shield",
-		shortDesc: "If held by a Zamazenta, this item changes its forme to Crowned Shield.",
+		shortDesc: "If held by a Zamazenta, mitigates the once-per-battle effect of Dauntless Shield.",
 	},
 	rustedsword: {
 		name: "Rusted Sword",
-		shortDesc: "If held by a Zacian, this item changes its forme to Crowned Sword.",
+		shortDesc: "If held by a Zacian, mitigates the once-per-battle effect of Intrepid Sword.",
 	},
 	sablenite: {
 		name: "Sablenite",
