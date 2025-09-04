@@ -33124,7 +33124,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			return: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			roar: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			rocksmash: ["7V", "6M", "5M", "4M", "3M"],
-			roost: ["7M", "6M", "5T", "4M"],
+			roost: ["9M", "8M", "7M", "6M", "5T", "4M"],
 			round: ["8M", "7M", "6M", "5M"],
 			safeguard: ["9L18", "8M", "8L18", "7M", "7L65", "7V", "6M", "6L65", "5M", "5L65", "4M", "4L9", "4S3", "3M", "3L11"],
 			sandstorm: ["9M", "8M", "7M", "7V", "6M", "5M", "4M", "3M"],
@@ -33153,7 +33153,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			thunder: ["9M", "8M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "8M", "7M", "6M", "5M", "4M", "3M"],
 			thunderwave: ["8M", "7M", "6M", "5M", "4M", "3T"],
-			toxic: ["7M", "7V", "6M", "5M", "4M", "3M"],
+			toxic: ["9M", "8M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			trick: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			twister: ["4T"],
 			waterfall: ["9M", "8M", "7M", "7V", "6M", "5M", "4M", "3M"],
@@ -33168,6 +33168,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			// new moves
 			aquaring: ["9M"],
 			scald: ["9M"],
+			flipturn: ["9M"],
+			frostbite: ["9M"],
 		},
 		eventData: [
 			{generation: 3, level: 70, shiny: 1, moves: ["recover", "hydropump", "raindance", "swift"]},
@@ -52878,6 +52880,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			trick: ["9M"],
 			trickroom: ["9M", "8M", "7M", "6M", "5M", "4M"],
 			twister: ["4T"],
+
+			// new moves 
+			calmmind: ["9M"],
 		},
 		eventData: [
 			{generation: 4, level: 47, shiny: 1, moves: ["metalclaw", "ancientpower", "dragonclaw", "roaroftime"]},
@@ -53000,6 +53005,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			waterfall: ["9M"],
 			waterpulse: ["9M", "9L1", "8L1", "7T", "7L6", "6T", "6L6", "5L6", "4M", "4L6", "4S0"],
 			whirlpool: ["9M", "8M", "4M"],
+
+			// new moves
+			calmmind: ["9M"],
 		},
 		eventData: [
 			{generation: 4, level: 47, shiny: 1, moves: ["waterpulse", "ancientpower", "dragonclaw", "spacialrend"]},
