@@ -10318,7 +10318,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		isNonstandard: "Past",
 		name: "King's Shield",
 		pp: 10,
 		priority: 4,
@@ -16153,7 +16152,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 100,
 		category: "Physical",
 		name: "Sacred Fire",
-		pp: 5,
+		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, defrost: 1, metronome: 1 },
 		secondary: {
@@ -18542,7 +18541,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onSwitchIn(pokemon) {
 				if (pokemon.hasItem('heavydutyboots')) return;
 				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
-				this.damage(pokemon.maxhp * Math.min(2 ** typeMod, 4) / 8);
+				this.damage(pokemon.maxhp * Math.min(2 ** typeMod, 1) / 8);
 			},
 		},
 		secondary: null,
