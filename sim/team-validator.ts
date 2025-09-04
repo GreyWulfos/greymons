@@ -537,11 +537,7 @@ export class TeamValidator {
 				!ruleTable.has('megarayquazaclause')
 			) {
 				tierSpecies = dex.species.get('Rayquaza-Mega');
-			} else if (item.id === 'rustedsword' && species.id === 'zacian') {
-				tierSpecies = dex.species.get('Zacian-Crowned');
-			} else if (item.id === 'rustedshield' && species.id === 'zamazenta') {
-				tierSpecies = dex.species.get('Zamazenta-Crowned');
-			}
+			} 
 		}
 
 		return { outOfBattleSpecies, tierSpecies };
@@ -1661,9 +1657,9 @@ export class TeamValidator {
 			'Zacian-Crowned': 'behemothblade', 'Zamazenta-Crowned': 'behemothbash',
 		};
 		if (species.name in crowned) {
-			const behemothMove = set.moves.map(toID).indexOf(crowned[species.name] as ID);
-			if (behemothMove >= 0) {
-				set.moves[behemothMove] = 'ironhead';
+			const ironHeadID = set.moves.map(toID).indexOf('ironhead' as ID);
+			if (ironHeadID >= 0) {
+				set.moves[ironHeadID] = crowned[species.name];
 			}
 		}
 		if (species.baseSpecies === "Hoopa" && dex.gen >= 9) {

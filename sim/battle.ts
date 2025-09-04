@@ -2640,40 +2640,42 @@ export class Battle {
 			this.add('start');
 
 			// Change Zacian/Zamazenta into their Crowned formes
-			for (const pokemon of this.getAllPokemon()) {
-				let rawSpecies: Species | null = null;
-				if (pokemon.species.id === 'zacian' && pokemon.item === 'rustedsword') {
-					rawSpecies = this.dex.species.get('Zacian-Crowned');
-				} else if (pokemon.species.id === 'zamazenta' && pokemon.item === 'rustedshield') {
-					rawSpecies = this.dex.species.get('Zamazenta-Crowned');
-				}
-				if (!rawSpecies) continue;
-				const species = pokemon.setSpecies(rawSpecies);
-				if (!species) continue;
-				pokemon.baseSpecies = rawSpecies;
-				pokemon.details = pokemon.getUpdatedDetails();
-				pokemon.setAbility(species.abilities['0'], null, null, true);
-				pokemon.baseAbility = pokemon.ability;
+			// We've altered Zacian/Zamazenta to operate externally so they can keep using different items.
 
-				const behemothMove: { [k: string]: string } = {
-					'Zacian-Crowned': 'behemothblade', 'Zamazenta-Crowned': 'behemothbash',
-				};
-				const ironHeadIndex = pokemon.baseMoves.indexOf('ironhead');
-				if (ironHeadIndex >= 0) {
-					const move = this.dex.moves.get(behemothMove[rawSpecies.name]);
-					pokemon.baseMoveSlots[ironHeadIndex] = {
-						move: move.name,
-						id: move.id,
-						pp: move.noPPBoosts ? move.pp : move.pp * 8 / 5,
-						maxpp: move.noPPBoosts ? move.pp : move.pp * 8 / 5,
-						target: move.target,
-						disabled: false,
-						disabledSource: '',
-						used: false,
-					};
-					pokemon.moveSlots = pokemon.baseMoveSlots.slice();
-				}
-			}
+			// for (const pokemon of this.getAllPokemon()) {
+			// 	let rawSpecies: Species | null = null;
+			// 	if (pokemon.species.id === 'zacian' && pokemon.item === 'rustedsword') {
+			// 		rawSpecies = this.dex.species.get('Zacian-Crowned');
+			// 	} else if (pokemon.species.id === 'zamazenta' && pokemon.item === 'rustedshield') {
+			// 		rawSpecies = this.dex.species.get('Zamazenta-Crowned');
+			// 	}
+			// 	if (!rawSpecies) continue;
+			// 	const species = pokemon.setSpecies(rawSpecies);
+			// 	if (!species) continue;
+			// 	pokemon.baseSpecies = rawSpecies;
+			// 	pokemon.details = pokemon.getUpdatedDetails();
+			// 	pokemon.setAbility(species.abilities['0'], null, null, true);
+			// 	pokemon.baseAbility = pokemon.ability;
+
+			// 	const behemothMove: { [k: string]: string } = {
+			// 		'Zacian-Crowned': 'behemothblade', 'Zamazenta-Crowned': 'behemothbash',
+			// 	};
+			// 	const ironHeadIndex = pokemon.baseMoves.indexOf('ironhead');
+			// 	if (ironHeadIndex >= 0) {
+			// 		const move = this.dex.moves.get(behemothMove[rawSpecies.name]);
+			// 		pokemon.baseMoveSlots[ironHeadIndex] = {
+			// 			move: move.name,
+			// 			id: move.id,
+			// 			pp: move.noPPBoosts ? move.pp : move.pp * 8 / 5,
+			// 			maxpp: move.noPPBoosts ? move.pp : move.pp * 8 / 5,
+			// 			target: move.target,
+			// 			disabled: false,
+			// 			disabledSource: '',
+			// 			used: false,
+			// 		};
+			// 		pokemon.moveSlots = pokemon.baseMoveSlots.slice();
+			// 	}
+			// }
 
 			this.format.onBattleStart?.call(this);
 			for (const rule of this.ruleTable.keys()) {
