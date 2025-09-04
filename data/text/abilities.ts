@@ -5,9 +5,17 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	easypickings: {
 		name: "Easy Pickings",
 		desc: "At the end of every turn, this pokemon restores 1/16 of its max HP.",
-		shortDesc: "After each turn, holder restores 1/16 of its max HP.",
+		shortDesc: "After each turn, Pokemon restores 1/16 of its max HP.",
 
 		heal: "  [POKEMON] restored some health with its easy pickings!",
+	},
+
+	solarcore: {
+		name: "Solar Core",
+		desc: "At the end of every turn, this pokemon restores 1/8 of its max HP.",
+		shortDesc: "After each turn, Pokemon restores 1/8 of its max HP.",
+
+		heal: "  [POKEMON] was revitalized by its Solar Core!",
 	},
 
 	daunt: {

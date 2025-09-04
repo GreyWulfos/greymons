@@ -65,7 +65,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Daunt",
 		rating: 3.5,
-		num: 22,
+		num: 312,
+	},
+
+	solarcore: {
+		onResidualOrder: 5,
+		onResidualSubOrder: 4,
+		onResidual(pokemon) {
+			this.heal(pokemon.baseMaxhp / 8);
+		},
+		name: "Solar Core",
+		rating: 4.5,
+		num: 313,
 	},
 
 	// new abilities end here
