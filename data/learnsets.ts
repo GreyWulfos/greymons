@@ -46388,6 +46388,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["8M", "7T", "6T", "5T", "4T"],
 			willowisp: ["9M"],
 			zenheadbutt: ["9M"],
+
+			// new moves
+			morningsun: ["9M"],
 		},
 		eventData: [
 			{generation: 3, level: 45, shiny: 1, moves: ["slash", "bulkup", "earthquake", "fireblast"]},
