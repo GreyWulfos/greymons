@@ -80179,6 +80179,13 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wildcharge: ["9M", "9L56", "9S4", "8M", "8L56", "7M"],
 			workup: ["8M", "7M"],
 			zenheadbutt: ["9M", "9L21", "8M", "8L21", "8S3", "7T", "7L19", "7S0", "7S1", "7S2"],
+
+			// new moves
+			swordsdance: ["9M"],
+			storedpower: ["9M"],
+			willowisp: ["9M"],
+			healbell: ["9M"],
+			wish: ["9M"],
 		},
 		eventData: [
 			{generation: 7, level: 55, moves: ["sunsteelstrike", "cosmicpower", "crunch", "zenheadbutt"]},
@@ -80207,7 +80214,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dreameater: ["9L70", "9S4", "8L70", "7M", "7L59"],
 			dualwingbeat: ["9M", "8T"],
 			endure: ["9M", "8M"],
-			expandingforce: ["9M", "8T"],
 			facade: ["9M", "8M", "7M"],
 			fly: ["9M", "8M", "7M"],
 			focusblast: ["9M", "8M", "7M"],
@@ -80275,6 +80281,11 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			willowisp: ["9M", "8M", "7M"],
 			wonderroom: ["8M", "7T"],
 			workup: ["8M", "7M"],
+
+			// new moves
+			frostbite: ["9M"],
+			playrough: ["9M"],
+			drainingkiss: ["9M"],
 		},
 		eventData: [
 			{generation: 7, level: 55, moves: ["moongeistbeam", "cosmicpower", "nightdaze", "shadowball"]},
@@ -80824,7 +80835,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			earthquake: ["9M", "8M", "7M"],
 			embargo: ["7M"],
 			endure: ["9M", "8M"],
-			expandingforce: ["9M", "8T"],
 			facade: ["9M", "8M", "7M"],
 			flashcannon: ["9M", "8M", "7M"],
 			fling: ["9M", "8M", "7M"],
@@ -80857,7 +80867,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			psychic: ["9M", "8M", "7M"],
 			psychicfangs: ["9M", "8M"],
 			psychocut: ["9L32", "8M", "8L32", "8S3", "7L37"],
-			psyshock: ["9M", "8M", "7M"],
 			recycle: ["7T"],
 			reflect: ["9M", "8M", "7M"],
 			rest: ["9M", "8M", "7M"],
@@ -80879,7 +80888,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			solarbeam: ["9M", "8M", "7M"],
 			stealthrock: ["9M", "9L8", "8M", "8L8", "7T", "7L53", "7S0"],
 			stoneedge: ["9M", "8M", "7M"],
-			storedpower: ["9M", "9L40", "9S4", "8M", "8L40", "7L13"],
 			substitute: ["9M", "8M", "7M", "7S2"],
 			sunnyday: ["9M"],
 			swagger: ["7M"],
@@ -80893,6 +80901,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			trickroom: ["9M", "8M", "7M"],
 			wringout: ["7L67", "7S0"],
 			xscissor: ["9M", "8M", "7M"],
+
+			// new moves
+			pursuit: ["9M"],
+			powertrip: ["9M"],
 		},
 		eventData: [
 			{generation: 7, level: 75, moves: ["stealthrock", "irondefense", "wringout", "prismaticlaser"]},

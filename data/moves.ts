@@ -10803,7 +10803,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isZ: "ultranecroziumz",
 		secondary: null,
 		target: "normal",
-		type: "Psychic",
+		type: "Dark",
 		contestType: "Cool",
 	},
 	liquidation: {
@@ -13865,7 +13865,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		ignoreAbility: true,
 		secondary: null,
 		target: "normal",
-		type: "Psychic",
+		type: "Dark",
 		contestType: "Cool",
 	},
 	pikapapow: {
