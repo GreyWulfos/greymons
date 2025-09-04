@@ -1737,7 +1737,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	snowcloak: {
 		name: "Snow Cloak",
 		desc: "If Snow is active, this Pokemon's Special Defense is increased by 1.5x.",
-		shortDesc: "If Snow is active, this Pokemon's Defense is 1.5x.",
+		shortDesc: "If Snow is active, this Pokemon's Sp. Def is 1.5x.",
 		gen8: {
 			desc: "If Hail is active, the accuracy of moves used against this Pokemon is multiplied by 0.8. This Pokemon takes no damage from Hail.",
 			shortDesc: "If Hail is active, this Pokemon's evasiveness is 1.25x; immunity to Hail.",
