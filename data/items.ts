@@ -5096,7 +5096,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 			return true;
 		},
-		itemUser: ["Zamazenta-Crowned"],
+		itemUser: ["Zamazenta-Crowned", "Zamazenta"],
 		num: 1104,
 		gen: 8,
 	},
@@ -5109,7 +5109,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 			return true;
 		},
-		itemUser: ["Zacian-Crowned"],
+		itemUser: ["Zacian-Crowned", "Zacian"],
 		num: 1103,
 		gen: 8,
 	},
