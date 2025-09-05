@@ -66764,6 +66764,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			weatherball: ["9M", "8M"],
 			willowisp: ["9M", "8M", "7M", "6M", "5M"],
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T"],
+
+			// new moves
+			calmmind: ["9M"],
+			nastyplot: ["9M"],
 		},
 		eventData: [
 			{generation: 5, level: 50, moves: ["dragonbreath", "slash", "extrasensory", "fusionflare"]},
