@@ -4941,8 +4941,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(pokemon) {
 			this.add('-ability', pokemon, 'Teravolt');
 		},
+		onModifySTAB(stab, source, target, move) {
+			if (source.hasType(move.type) && move.type === 'Electric') {
+				if (stab === 2) {
+					return 2.25;
+				}
+				return 2;
+			}
+		},
 		onModifyMove(move) {
 			move.ignoreAbility = true;
+			if (move.type === 'Electric') {
+				move.forceSTAB = true;
+			}
 		},
 		flags: {},
 		name: "Teravolt",
@@ -5165,12 +5176,23 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(pokemon) {
 			this.add('-ability', pokemon, 'Turboblaze');
 		},
+		onModifySTAB(stab, source, target, move) {
+			if (source.hasType(move.type) && move.type === 'Fire') {
+				if (stab === 2) {
+					return 2.25;
+				}
+				return 2;
+			}
+		},
 		onModifyMove(move) {
 			move.ignoreAbility = true;
+			if (move.type === 'Fire') {
+				move.forceSTAB = true;
+			}
 		},
 		flags: {},
 		name: "Turboblaze",
-		rating: 3,
+		rating: 4,
 		num: 163,
 	},
 	unaware: {
