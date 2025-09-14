@@ -1032,9 +1032,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	ninetales: {
 		num: 38,
 		name: "Ninetales",
-		types: ["Fire"],
+		types: ["Fire", "Ghost"],
 		genderRatio: { M: 0.25, F: 0.75 },
-		baseStats: { hp: 73, atk: 76, def: 75, spa: 96, spd: 100, spe: 115 },
+		baseStats: { hp: 73, atk: 56, def: 75, spa: 96, spd: 100, spe: 115 },
 		abilities: { 0: "Flash Fire", H: "Drought" },
 		heightm: 1.1,
 		weightkg: 19.9,
