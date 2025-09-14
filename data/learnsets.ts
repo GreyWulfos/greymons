@@ -84792,7 +84792,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			recover: ["9L30", "8L30"],
 			rest: ["9M", "8M"],
 			reversal: ["9M", "8M"],
-			risingvoltage: ["8T"],
 			round: ["8M"],
 			scald: ["9M", "8M"],
 			selfdestruct: ["8M"],
@@ -84818,6 +84817,13 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			watergun: ["9L5", "8L5"],
 			wildcharge: ["9M"],
 			zingzap: ["9L50", "8L50"],
+
+			// new moves
+			risingvoltage: ["9M", "8T"],
+			voltswitch: ["9M"],
+			toxic: ["9M"],
+			sludgebomb: ["9M"],
+			sludgewave: ["9M"],
 		},
 	},
 	snom: {

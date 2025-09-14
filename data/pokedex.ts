@@ -15835,8 +15835,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	pincurchin: {
 		num: 871,
 		name: "Pincurchin",
-		types: ["Electric"],
-		baseStats: { hp: 48, atk: 101, def: 95, spa: 91, spd: 85, spe: 15 },
+		types: ["Electric", "Poison"],
+		baseStats: { hp: 83, atk: 61, def: 95, spa: 101, spd: 85, spe: 15 },
 		abilities: { 0: "Lightning Rod", H: "Electric Surge" },
 		heightm: 0.3,
 		weightkg: 1,
