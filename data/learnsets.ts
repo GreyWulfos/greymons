@@ -8844,6 +8844,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			wildcharge: ["9M", "8M", "7M", "6M", "5M"],
 			willowisp: ["9M", "9S2", "8M", "8V", "7M", "7S1", "6M", "5M", "4M"],
+
+			// new moves
+			scald: ["9M"],
+			dragondance: ["9M"],
 		},
 		eventData: [
 			{generation: 4, level: 50, abilities: ["intimidate"], moves: ["flareblitz", "thunderfang", "crunch", "extremespeed"], pokeball: "cherishball"},
