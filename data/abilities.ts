@@ -2241,9 +2241,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 89,
 	},
 	justified: {
-		onDamagingHit(damage, target, source, move) {
-			if (move.type === 'Dark') {
-				this.boost({ atk: 1 });
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Dark') {
+				if (!this.boost({ atk: 1 })) {
+					this.add('-immune', target, '[from] ability: Justified');
+				}
+				return null;
 			}
 		},
 		flags: {},
