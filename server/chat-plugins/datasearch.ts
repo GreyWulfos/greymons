@@ -2878,9 +2878,7 @@ function runLearn(target: string, cmd: string, formatid: string) {
 		if (minSourceGen) {
 			formatName += ` (Min Source Gen = ${minSourceGen})`;
 			ruleTable.minSourceGen = minSourceGen;
-		} else if (gen >= 9) {
-			ruleTable.minSourceGen = gen;
-		}
+		} 
 	} else {
 		gen = Dex.forFormat(format).gen;
 	}
