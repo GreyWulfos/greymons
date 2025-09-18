@@ -12165,6 +12165,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			voltswitch: ["9M", "8M", "7M", "6M", "5M"],
 			wildcharge: ["9M", "8M", "7M", "6M", "5M"],
 			zapcannon: ["9L64", "8L64", "7L1", "7V", "6L1", "5L66", "4L60", "3L62"],
+
+			// new moves
+			flamethrower: ["9M"],
 		},
 		eventData: [
 			{generation: 3, level: 30, moves: ["refresh", "doubleedge", "raindance", "thunder"]},
@@ -73560,6 +73563,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["7M", "6M"],
 			uturn: ["8M", "7M", "6M"],
 			zenheadbutt: ["8M", "7T", "6T"],
+
+			// new moves
+			pursuit: ["9M"],
 		},
 		eventData: [
 			{generation: 6, level: 50, moves: ["snarl", "oblivionwing", "disable", "darkpulse"]},
@@ -76506,7 +76512,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			icywind: ["9M", "8M", "7T"],
 			infestation: ["7M"],
 			irondefense: ["9M", "8M", "7T"],
-			knockoff: ["7T"],
 			lightscreen: ["8M", "7M"],
 			liquidation: ["9M", "9L35", "8M", "8L35", "7T", "7L58"],
 			lunge: ["9M"],
@@ -80911,7 +80916,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			xscissor: ["9M", "8M", "7M"],
 
 			// new moves
-			pursuit: ["9M"],
 			powertrip: ["9M"],
 		},
 		eventData: [
