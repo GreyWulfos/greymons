@@ -153,8 +153,8 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "LC",
 	},
 	fearow: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "ZU",
+		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
 	ekans: {
@@ -286,8 +286,8 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "NFE",
 	},
 	nidoqueen: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "ZU",
+		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
 	nidoranm: {
@@ -301,8 +301,8 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "NFE",
 	},
 	nidoking: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "ZU",
+		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
 	cleffa: {
@@ -4008,8 +4008,8 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "RU",
 	},
 	xerneas: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "AG",
 	},
 	xerneasneutral: {
@@ -4017,23 +4017,23 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	yveltal: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	zygarde: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	zygarde10: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "ZU",
+		doublesTier: "(DUU)",
 		natDexTier: "UU",
 	},
 	zygardecomplete: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	diancie: {
