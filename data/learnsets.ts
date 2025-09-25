@@ -66773,7 +66773,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T"],
 
 			// new moves
-			calmmind: ["9M"],
 			nastyplot: ["9M"],
 		},
 		eventData: [
