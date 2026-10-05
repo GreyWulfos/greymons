@@ -36946,6 +36946,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			workup: ["7M", "5M"],
 			worryseed: ["9L33", "7T", "6T", "5T", "4T"],
 			zenheadbutt: ["9M"],
+
+			// new moves
+			grassyglide: ["9M"],
 		},
 	},
 	slakoth: {
