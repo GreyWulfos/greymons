@@ -40377,6 +40377,11 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			weatherball: ["8M"],
 			whirlpool: ["8M", "8L27", "7L13", "6L13", "5L14", "4M", "4L14", "3L19"],
 			zenheadbutt: ["8M", "7T", "6T", "5T"],
+
+			// new moves
+			calmmind: ["9M"],
+			boomburst: ["9M"],
+			rehydrate: ["9M"],
 		},
 		eventData: [
 			{generation: 3, level: 100, moves: ["rest", "waterspout", "amnesia", "hydropump"], pokeball: "pokeball"},
