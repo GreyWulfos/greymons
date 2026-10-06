@@ -5002,6 +5002,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(0.5);
 			}
 		},
+		onUpdate(pokemon) {
+			if (pokemon.status === 'brn' || pokemon.status === 'frz') {
+				this.add('-activate', pokemon, 'ability: Thick Fat');
+				pokemon.cureStatus();
+			}
+		},
+		onSetStatus(status, target, source, effect) {
+			if (status.id !== 'brn' && status.id !== 'frz') return;
+			if ((effect as Move)?.status) {
+				this.add('-immune', target, '[from] ability: Thick Fat');
+			}
+			return false;
+		},
 		flags: { breakable: 1 },
 		name: "Thick Fat",
 		rating: 3.5,
