@@ -43597,6 +43597,12 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			trick: ["9M", "9L46", "7T", "7L58", "6T", "6L58", "5T", "5L58", "4T", "4L66"],
 			trickroom: ["9M", "7M", "6M", "5M", "4M"],
 			willowisp: ["9M", "9L16", "7M", "7L16", "6M", "6L13", "5M", "5L13", "4M", "4L23", "3L32"],
+
+			// new moves
+			uturn: ["9M"],
+			bodypress: ["9M"],
+			fakeout: ["9M"],
+			frostbite: ["9M"],
 		},
 		eventData: [
 			{generation: 3, level: 37, abilities: ["insomnia"], moves: ["helpinghand", "feintattack", "shadowball", "curse"]},
@@ -53346,6 +53352,11 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["7M", "6M", "5M", "4M"],
 			twister: ["4T"],
 			willowisp: ["9M", "8M", "7M", "6M", "5M", "4M"],
+
+			// new moves
+			recover: ["9M"],
+			glare: ["9M"],
+			frostbite: ["9M"],
 		},
 		eventData: [
 			{generation: 4, level: 70, shiny: 1, moves: ["shadowforce", "healblock", "earthpower", "slash"]},
