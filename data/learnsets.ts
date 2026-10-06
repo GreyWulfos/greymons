@@ -40381,6 +40381,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			// new moves
 			calmmind: ["9M"],
 			boomburst: ["9M"],
+			blowout: ["9M"],
 			rehydrate: ["9M"],
 		},
 		eventData: [
