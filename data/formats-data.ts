@@ -2068,8 +2068,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "LC",
 	},
 	wailord: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier:"ZU",
 		natDexTier: "RU",
 	},
 	numel: {
@@ -2245,7 +2244,9 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	dusclops: {
-		tier: "NFE",
+		tier: "ZU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
 	},
 	dusknoir: {
 		tier: "ZU",
@@ -2304,8 +2305,8 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "NFE",
 	},
 	walrein: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "ZU",
+		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
 	clamperl: {
