@@ -6,6 +6,16 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Freezes the target.",
 		shortDesc: "Freezes the target.",
 	},
+	rehydrate: {
+	name: "Rehydrate",
+	desc: "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Primordial Sea or Rain Dance, and 1/4 of its maximum HP if the weather is Desolate Land, Sunny Day, Sandstorm, or Snow, all rounded half down.",
+	shortDesc: "Heals the user by a weather-dependent amount.",
+	},
+	blowout: {
+		name: "Blowout",
+		desc: "Power is equal to 20+(X*20), where X is the user's total stat stage changes that are greater than 0.",
+		shortDesc: " + 20 power for each of the user's stat boosts.",
+	},
 
 	// end of new moves
 
