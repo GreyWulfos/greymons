@@ -42,6 +42,11 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 			return accuracy;
 		},
+		onAnyModifyCritRatio(critRatio, source, target, move) {
+			if (move && target === this.effectState.target) {
+				return critRatio+2; // will more likely crit
+			}
+		}
 	},
 	slp: {
 		name: 'slp',
