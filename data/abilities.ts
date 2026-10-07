@@ -79,6 +79,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 313,
 	},
 
+	schadenfreude: {
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				source.heal(source.baseMaxhp / 2);
+			}
+		},
+		flags: {},
+		name: "Schadenfreude",
+		rating: 3,
+		num: 314,
+	},
+
 	// new abilities end here
 
 	noability: {

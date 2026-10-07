@@ -9,7 +9,6 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 
 		heal: "  [POKEMON] restored some health with its easy pickings!",
 	},
-
 	solarcore: {
 		name: "Solar Core",
 		desc: "At the end of every turn, this pokemon restores 1/8 of its max HP.",
@@ -17,11 +16,16 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 
 		heal: "  [POKEMON] was revitalized by its Solar Core!",
 	},
-
 	daunt: {
 		name: "Daunt",
 		desc: "On switch-in, this Pokemon lowers the Special Attack of opposing Pokemon by 1 stage. Pokemon with the Inner Focus, Oblivious, Own Tempo, or Scrappy Abilities and Pokemon behind a substitute are immune.",
 		shortDesc: "On switch-in, this Pokemon lowers the Special Attack of opponents by 1 stage.",
+	},
+	schadenfreude: {
+		name: "Schadenfreude",
+		shortDesc: "This Pokemon restores 50% of its HP upon attacking and KOing another.",
+
+		heal: "  [POKEMON] recovered from its opponent's defeat!",
 	},
 
 	// new abilities end here
