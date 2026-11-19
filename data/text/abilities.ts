@@ -23,7 +23,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	schadenfreude: {
 		name: "Schadenfreude",
-		shortDesc: "This Pokemon restores 50% of its HP upon attacking and KOing another.",
+		shortDesc: "This Pokemon heals 1/3 HP and cures status when KOing others.",
+		desc: "This Pokemon restores 33% of its HP and cures all adverse status conditions upon attacking and KOing another Pokemon.",
 
 		heal: "  [POKEMON] recovered from its opponent's defeat!",
 	},

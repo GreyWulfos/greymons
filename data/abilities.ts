@@ -82,7 +82,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	schadenfreude: {
 		onSourceAfterFaint(length, target, source, effect) {
 			if (effect && effect.effectType === 'Move') {
-				source.heal(source.baseMaxhp / 2);
+				source.cureStatus();
+				this.heal(source.baseMaxhp / 3, source);
 			}
 		},
 		flags: {},
