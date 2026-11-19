@@ -28032,6 +28032,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["9M", "7T", "6T", "5T", "4T"],
 			uturn: ["9M"],
 			wingattack: ["9L1", "7L1", "6L1", "5L1", "4L1"],
+
+			// new moves
+			closecombat: ["9M"],
+			swordsdance: ["9M"],
 		},
 		eventData: [
 			{generation: 7, level: 65, gender: "M", abilities: ["superluck"], moves: ["nightslash", "skyattack", "heatwave", "icywind"], pokeball: "cherishball"},

@@ -7712,7 +7712,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 430,
 		name: "Honchkrow",
 		types: ["Dark", "Flying"],
-		baseStats: { hp: 100, atk: 125, def: 72, spa: 75, spd: 72, spe: 71 },
+		baseStats: { hp: 100, atk: 125, def: 67, spa: 105, spd: 67, spe: 71 },
 		abilities: { 0: "Schadenfreude", 1: "Super Luck", H: "Moxie" },
 		heightm: 0.9,
 		weightkg: 27.3,
